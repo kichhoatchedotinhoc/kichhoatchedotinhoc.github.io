@@ -2,187 +2,63 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Bách Khoa Toàn Thư Thuốc Phạp</title>
+    <title>Bách Khoa Toàn Thư Anh Bình Lộc </title>
     <style>
-       body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('img/hearto.jpeg');
-    background-size: cover;    
-    background-position: center;  
-    background-repeat: repeat; 
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background-color: rgb(255, 255, 255);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px #aaa;
-        }
-
-        /* Tabs */
-        .tab {
-            overflow: hidden;
-            border-bottom: 1px solid #ccc;
-            margin-bottom: 20px;
-        }
-        .tab button {
-            background-color: inherit;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 10px 20px;
-            transition: 0.3s;
-            font-size: 16px;
-        }
-        .tab button:hover {
-            background-color: #ddd;
-        }
-        .tab button.active {
-            background-color: #ad2626;
-            color: white;
-        }
-
-        /* Tab content */
-        .tabcontent {
-            display: none;
-        }
-        input[type="number"] {
-            padding: 5px;
-            margin-top: 5px;
-        }
-        a.button {
-            display: inline-block;
-            margin-top: 10px;
-            text-decoration: none;
-            color: white;
-            background-color: #ff7b00;
-            padding: 8px 12px;
-            border-radius: 5px;
-        }
-        a.button:hover {
-            background-color: #b32400;
-        }
-        iframe {
-            width: 100%;
-            height: 400px;
-            border: none;
-            border-radius: 5px;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-    </style>
+    body {
+        font-family: 'Times New Roman', serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('img/hearto.jpeg');
+        background-size: cover;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .tab button {
+        background: #ad2626;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .tabcontent {
+        margin-top: 20px;
+    }
+    a.button {
+        display: inline-block;
+        margin-top: 10px;
+        background: #ff7b00;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+</style>
 </head>
 <body>
     <div class="container">
-        <h1>BÁCH KHOA TOÀN THƯ CỌA HỒNG</h1>
-        <h3>Sử dụng trang web này trong 20 phút trở lên sẽ tăng trí khôn của bạn lên gấp rưỡi lần! (Nguồn: Tin tui i :3)</h3>
+        <h1>BÁCH KHOA TOÀN THƯ ANH BÌNH LỘC</h1>
+        <h3>Lưu trữ những tài liệu quan trọng!</h3>
 
-        <!-- Tabs -->
         <div class="tab">
-            <button class="tablinks active" onclick="openTab(event, 'Tab1')">Máy tính tuổi thông minh</button>
-            <button class="tablinks" onclick="openTab(event, 'Tab2')">Tài liệu học thức</button>
-            <button class="tablinks" onclick="openTab(event, 'Tab3')">Cảm thụ nghệ thuật</button>
-            <button class="tablinks" onclick="openTab(event, 'Tab4')">Triết học</button>
+            <button class="tablinks active">Tài liệu học thức</button>
         </div>
 
-        <!-- Tab 1: Nhập số -->
-    <div id="Tab1" class="tabcontent" style="display:block;">
-     <h2>Máy tính tuổi thông minh (Biết tuổi của bạn chỉ sau 10 giây!)</h2>
-    <p>Sử dụng máy tính tân tiến nhất được lập trình bởi bộ ba Anh, Lộc, Anh! để tìm ra số năm kể từ ngày bạn giáng trần!</p>
-     <form id="numberForm">
-        <input type="number" step="1" id="numberInput" placeholder="Nhập tuổi của bạn">
-        <button type="submit">Bắt đầu tính toán (sử dụng AI thông minh)</button>
-     </form>
-        <p id="numberResult"></p>
-        <img src="img/6578.gif_wh300.gif" alt="Những câu nói bất hủ!!...">
-    </div>
-
-        <!-- Tab 2: Tải file -->
         <div id="Tab2" class="tabcontent">
             <h2>Tài liệu học thức (Học, học nữa, học mãi!)</h2>
-            <p>Top những tài liệu bất hủ nhất năm 2007!.....</p>
-            <a href="img/3.4.4-Grammar-and-vocabulary-for-maps-and-processes-PDF.pdf" download class="button">Kích hoạt chế độ tải tài liệu ngữ pháp Anh Quốc ngữ</a>
-            <a href="img/Đây_thôn_Vĩ_Dạ.pdf" download class="button">Kích hoạt chế độ tải tài liệu Đây thôn Vĩ Dạ</a>
-        </div>
-
-        <!-- Tab 3: Xem phim -->
-        <div id="Tab3" class="tabcontent">
-     <h2>Xem tác phẩm nghệ thuật (hàng ngàn người đã khóc!....)</h2>
-     <video controls width="100%">
-         <source src="img/emnao.mp4" type="video/mp4">
-      </video>
-     </div>
-
-        <!-- Tab 4: Triết học -->
-        <div id="Tab4" class="tabcontent">
-            <h2>Triết học (Bạn sẽ phải ngẩm nghĩ!!!...)</h2>
-            <p>
-                "Con chồn ngồi cạnh con nai, con nai thấy thế like share subscribe."
-                <br>
-                - Vô danh
-                <br><br>
-                "Mẹo mày bé, mưu tao lớn."
-                <br>
-                - Napoleon Bonaparte
-                <br><br>
-                Class mình ơi
-Hôm nay mis chủ nhiệm vừa called mình out complained với mình vì class mình too noisy . class mình not good at all trong việc giữ trật tự và follow the rules một số bạn cứ talking ,
-chatting trong giờ học làm ảnh hưởng đến class performance còn 1 số khác không chịu pay attention trong classroom cứ daydreaming như đang ở another dimension vậy làm ơn wake up change your attitude, guys! this is not a joke come on class mình phải work harder không thì miss chủ nhiệm sẽ punish cả class đó mình không muốn mỗi lần họp class là lại bị negative feedback let's fix this class nha.
-                <br>
-                - Huy Pho Rủm
-            </p>
-            <img src="img/G6Jvaf5XsAAZzZU.jpg" alt="Những câu nói bất hủ!!...">
+            <p>Top những tài liệu bất hủ nhất năm 2025!.....</p>
+            <a href="img/3.4.4-Grammar-and-vocabulary-for-maps-and-processes-PDF.pdf" download class="button">Tải tài liệu ngữ pháp Tiếng ANh</a>
+            <a href="img/Đây_thôn_Vĩ_Dạ.pdf" download class="button">Tải tài liệu Đây thôn Vĩ Dạ</a>
+            <a href="img/conic.pdf" download class="button">Tải tài liệu Ba đường Conic ĐGNL</a>
+            <a href="img/ptlg.pdf" download class="button">Tải tài liệu Phương trình lượng giác ĐGNL</a>
+            <a href="img/hhkg.pdf" download class="button">Tải tài liệu Hình học không gian ĐGNL</a>
+            <a href="img/tv.pdf" download class="button">Tải tài liệu Tiếng Việt ĐGNL</a>
         </div>
     </div>
-
-    <script>
-        function openTab(evt, tabName) {
-            const tabcontent = document.getElementsByClassName("tabcontent");
-            for (let i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            const tablinks = document.getElementsByClassName("tablinks");
-            for (let i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-        const form = document.getElementById("numberForm");
-        const input = document.getElementById("numberInput");
-        const result = document.getElementById("numberResult");
-
-        form.addEventListener("submit", function(event) {
-    event.preventDefault(); // tránh reload
-    const value = input.value;
-    if(value !== "") {
-        result.textContent = "Số tuổi của bạn là: " + value;
-
-        // Bắt đầu progress bar
-        const progressBar = document.getElementById("progressBar");
-        let width = 0;
-        progressBar.style.width = "0%";
-        progressBar.textContent = "0%";
-
-        const interval = setInterval(() => {
-            if (width >= 100) {  // chạy tới 100%
-                clearInterval(interval);
-            } else {
-                width++;
-                progressBar.style.width = width + "%";
-                progressBar.textContent = width + "%";
-            }
-        }, 20); // tốc độ animation (20ms mỗi bước)
-    } else {
-        result.textContent = "";
-    }
-});
-    </script>
 </body>
 </html>
